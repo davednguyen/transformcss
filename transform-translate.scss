@@ -1,4 +1,8 @@
 .translate-container {
+    transition: border-radius 2s ease-in-out;
+    &:hover {
+        border-radius: 20%;
+    }
     margin-bottom: 2rem;
     width: 100%;
     background-color: pink;
@@ -25,7 +29,11 @@
     .icon1 {
         //transform: rotate3d(90deg);
         //transform: scale(4, 1);
-        transform: translate(40%, 0);
+        //transform: translate(40%, 0);
+        &:hover {
+            height: 12rem;
+        }
+        transition: height 2s;
     }
     .icon3 {
         //transform: rotate3d(35deg);
@@ -52,5 +60,48 @@
     &:active {
         color: white;
         transform: translate(200%, 500%);
+    }
+    transition: transform 2s;
+}
+
+.div-container div {
+    height: 6rem;
+    width: 6rem;
+    &#pink {
+        background-color: pink;
+        transition: background-color 3s ease-in 1s;
+        &:hover {
+            transform: scale(2);
+            background-color: green;
+        }
+        transition: transform 5s;
+    }
+    &#orange {
+        background: orange;
+        //transition: background-color 3s ease-in-out 1s;
+        &:hover {
+            transform: rotate(96deg);
+            background-color: lightyellow;
+        }
+        transition: transform 5s;
+        //transition: background-color 3s ease-in-out 1s;
+        //transition: background-color 5s;
+    }
+    &#blue {
+        //background: blue;
+        background-color: skyblue;
+        transition: background-color 3s ease-in 1s;
+        &:hover {
+            transform: translate(40%, 0);
+            background-color: blue;
+        }
+        transition: transform 5s;
+    }
+}
+
+.tex1 {
+    transition: opacity 3s;
+    &:hover {
+        opacity: 0;
     }
 }

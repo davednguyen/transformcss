@@ -1,9 +1,13 @@
 .translate-container {
+  -webkit-transition: border-radius 2s ease-in-out;
+  transition: border-radius 2s ease-in-out;
   margin-bottom: 2rem;
   width: 100%;
   background-color: pink;
   height: 30vh;
   position: relative; }
+  .translate-container:hover {
+    border-radius: 20%; }
   .translate-container img {
     height: 8rem;
     max-height: 30vh; }
@@ -14,8 +18,10 @@
       -webkit-transform: translate(2rem, 35px) rotate(30deg) scale(2, 2);
               transform: translate(2rem, 35px) rotate(30deg) scale(2, 2); }
   .translate-container .icon1 {
-    -webkit-transform: translate(40%, 0);
-            transform: translate(40%, 0); }
+    -webkit-transition: height 2s;
+    transition: height 2s; }
+    .translate-container .icon1:hover {
+      height: 12rem; }
   .translate-container .icon3 {
     -webkit-transform: translate(0, 30%);
             transform: translate(0, 30%); }
@@ -23,7 +29,11 @@
 #button1 {
   border-radius: 10px;
   background-color: #ff6a80;
-  color: #0000FF; }
+  color: #0000FF;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s; }
   #button1:hover {
     -webkit-transform: scale(1.2, 1.2);
             transform: scale(1.2, 1.2); }
@@ -31,5 +41,49 @@
     color: white;
     -webkit-transform: translate(200%, 500%);
             transform: translate(200%, 500%); }
+
+.div-container div {
+  height: 6rem;
+  width: 6rem; }
+  .div-container div#pink {
+    background-color: pink;
+    -webkit-transition: background-color 3s ease-in 1s;
+    transition: background-color 3s ease-in 1s;
+    -webkit-transition: -webkit-transform 5s;
+    transition: -webkit-transform 5s;
+    transition: transform 5s;
+    transition: transform 5s, -webkit-transform 5s; }
+    .div-container div#pink:hover {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      background-color: green; }
+  .div-container div#orange {
+    background: orange;
+    -webkit-transition: -webkit-transform 5s;
+    transition: -webkit-transform 5s;
+    transition: transform 5s;
+    transition: transform 5s, -webkit-transform 5s; }
+    .div-container div#orange:hover {
+      -webkit-transform: rotate(96deg);
+              transform: rotate(96deg);
+      background-color: lightyellow; }
+  .div-container div#blue {
+    background-color: skyblue;
+    -webkit-transition: background-color 3s ease-in 1s;
+    transition: background-color 3s ease-in 1s;
+    -webkit-transition: -webkit-transform 5s;
+    transition: -webkit-transform 5s;
+    transition: transform 5s;
+    transition: transform 5s, -webkit-transform 5s; }
+    .div-container div#blue:hover {
+      -webkit-transform: translate(40%, 0);
+              transform: translate(40%, 0);
+      background-color: blue; }
+
+.tex1 {
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s; }
+  .tex1:hover {
+    opacity: 0; }
 
 /*# sourceMappingURL=transform-translate.css.map */
