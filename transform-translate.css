@@ -7,5 +7,29 @@
   .translate-container img {
     height: 8rem;
     max-height: 30vh; }
+  .translate-container .icon2 {
+    -webkit-transform: translate(2rem, 35px);
+            transform: translate(2rem, 35px); }
+    .translate-container .icon2:hover {
+      -webkit-transform: translate(2rem, 35px) rotate(30deg) scale(2, 2);
+              transform: translate(2rem, 35px) rotate(30deg) scale(2, 2); }
+  .translate-container .icon1 {
+    -webkit-transform: translate(40%, 0);
+            transform: translate(40%, 0); }
+  .translate-container .icon3 {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%); }
+
+#button1 {
+  border-radius: 10px;
+  background-color: #ff6a80;
+  color: #0000FF; }
+  #button1:hover {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2); }
+  #button1:active {
+    color: white;
+    -webkit-transform: translate(200%, 500%);
+            transform: translate(200%, 500%); }
 
 /*# sourceMappingURL=transform-translate.css.map */
